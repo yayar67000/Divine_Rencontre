@@ -3,7 +3,7 @@
 	flex-direction: row;
 	background-color: var(--second-color);
 	align-items: center;
-	gap: 0.5rem;
+	gap: 2rem;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
 	overflow-x: auto;
@@ -14,10 +14,12 @@
 }
 
 .image_content {
-	width: 5rem;
-	height: 5rem;
+	width: 6rem;
+	height: 6rem;
+	min-width: 6rem;
 	object-fit: cover;
 	border-radius: 50%;
+	box-shadow: 1px 3px 8px 1px #fff;
 }
 .content_messages {
 	width: 95vw;

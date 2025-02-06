@@ -8,6 +8,7 @@ import App from "./App.tsx";
 import Profil from "./pages/profil/Profil.tsx";
 import Home from "./pages/Home.tsx";
 import Messages from "./pages/messages.tsx";
+import ProfilDetails from "./pages/Profil_Details/ProfilDetails.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
 			{
 				path: "/profil",
 				element: <Profil />,
+			},
+			{
+				path: "/profildetails/:id",
+				element: <ProfilDetails />,
 			},
 		],
 	},

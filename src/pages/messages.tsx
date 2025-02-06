@@ -23,16 +23,19 @@ interface ProfilType {
 function Messages() {
 	const messages = DataMessages as MessagesType[];
 	const profils = DataProfils as ProfilType[];
+
 	return (
 		<section className="content_messages">
 			<div className="content_profils">
 				{profils.map((profil) => (
-					<img
-						className="image_content"
-						key={profil.id}
-						src={profil.image}
-						alt={profil.nom}
-					/>
+					<Link key={profil.id} to={`/profildetails/${profil.id}`}>
+						<img
+							className="image_content"
+							key={profil.id}
+							src={profil.image}
+							alt={profil.nom}
+						/>
+					</Link>
 				))}
 			</div>
 			<div className="block_message">
