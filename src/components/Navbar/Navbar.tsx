@@ -3,6 +3,9 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
 	return (
+		<>
+		<div className="container">
+		<h1 className="title">Divine rencontre</h1>
 		<nav>
 			{/* css a faire  */}
 			<NavLink to="/profil" className="nav-link-lat">
@@ -15,5 +18,7 @@ export default function Navbar() {
 				<img src="epitre.png" alt="" />
 			</NavLink>
 		</nav>
+		</div>
+		</>
 	);
 }

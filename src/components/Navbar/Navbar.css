@@ -1,7 +1,24 @@
+.container {
+	display: flex;
+	background: var(--second-color #d06a2b); 
+	padding: 1rem;
+	align-items: center;
+}
+	
 nav {
 	display: flex;
 	justify-content: space-around;
+	gap: 2rem;
 }
 nav img {
-	height: 10vh;
+	display: flex;
+	height: 5vh;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+	font-size: 2rem;
+	font-family: var(--first-font-family);
+	justify-content: flex-end;
 }

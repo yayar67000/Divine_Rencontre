@@ -1,19 +1,22 @@
-import ReactDOM from "react-dom/client";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./index.css";
 import App from "./App.tsx";
-import Messages from "./pages/messages.tsx";
-import Profil from "./pages/profil/Profil.tsx";
 
-// Router creation
+import Profil from "./Pages/Profil.tsx";
+import Home from "./Pages/Home.tsx";
+import Messages from "./Pages/messages.tsx";
+
+
 const router = createBrowserRouter([
 	{
 		element: <App />,
 		children: [
 			{
 				path: "/",
-				// element: < />, Mettre la page home
+				element: <Home />,
 			},
 			{
 				path: "/messages",
@@ -28,7 +31,11 @@ const router = createBrowserRouter([
 ]);
 
 const rootElement = document.getElementById("root");
-
-if (rootElement != null) {
-	ReactDOM.createRoot(rootElement).render(<RouterProvider router={router} />);
+if (rootElement == null) {
+	throw new Error(`Your HTML Document should contain a <div id="root"></div>`);
 }
+createRoot(rootElement).render(
+	<StrictMode>
+		<RouterProvider router={router} />
+	</StrictMode>,
+);
