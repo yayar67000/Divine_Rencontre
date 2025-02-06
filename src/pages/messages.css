@@ -7,7 +7,10 @@
 	margin-bottom: 2rem;
 	margin-top: 2rem;
 	overflow-x: auto;
-	max-width: 375px;
+	width: 95vw;
+	padding: 1rem;
+	border-radius: 8px;
+	/* max-width: 375px; */
 }
 
 .image_content {
@@ -16,13 +19,20 @@
 	object-fit: cover;
 	border-radius: 50%;
 }
+.content_messages {
+	width: 95vw;
+	/* background-color: red; */
+}
 
 .block_message article {
 	border-radius: 8px;
 	padding: 1rem;
-	margin: 1rem;
+	margin: 1rem 0;
 	border: 2px solid var(--primary-color);
 
+	& img {
+		width: 20vw;
+	}
 	& h3 {
 		font-size: 2rem;
 	}
