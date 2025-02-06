@@ -27,7 +27,12 @@ function Messages() {
 		<>
 			<div className="content_profils">
 				{profils.map((profil) => (
-					<img key={profil.id} src={profil.image} alt={profil.nom} />
+					<img
+						className="image_content"
+						key={profil.id}
+						src={profil.image}
+						alt={profil.nom}
+					/>
 				))}
 			</div>
 			<div className="block_message">
