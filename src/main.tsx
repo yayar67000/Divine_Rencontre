@@ -5,10 +5,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
 
-import Profil from "./Pages/Profil.tsx";
-import Home from "./Pages/Home.tsx";
-import Messages from "./Pages/messages.tsx";
-
+import Profil from "./pages/Profil.tsx";
+import Home from "./pages/Home.tsx";
+import Messages from "./pages/messages.tsx";
+import ProfilDetails from "./pages/Profil_Details/ProfilDetails.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
 			{
 				path: "/profil",
 				element: <Profil />,
+			},
+			{
+				path: "/profildetails/:id",
+				element: <ProfilDetails />,
 			},
 		],
 	},
