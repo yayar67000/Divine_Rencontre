@@ -6,12 +6,13 @@ import { Outlet } from "react-router-dom";
 
 function App() {
 	return (
-		<>
+		<main>
+			{" "}
 			<Navbar />
 			<h1> Divine rencontre</h1>
 			<Outlet />
 			<Footer />
-		</>
+		</main>
 	);
 }
 
