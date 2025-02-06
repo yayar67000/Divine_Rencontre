@@ -7,21 +7,33 @@ interface ProfilType {
 	nom: string;
 	description: string;
 	image: string;
-	age: 3300;
+	age: number;
 	relation: string;
 }
 
 export default function ProfilDetails() {
 	const profils = DataProfils as ProfilType[];
 	const { id } = useParams();
-	const idProfils = profils.find((idProfil) => idProfil.id === Number(id));
-	if (!idProfils) {
-		return <p>Projet non trouvé</p>;
+	const profil = profils.find((projet) => projet.id === Number(id));
+	if (!profil) {
+		return <p>Profil non trouvé</p>;
 	}
 
 	return (
-		<>
-			<h1>Profil Details</h1>
-		</>
+		<section className="detailprofil_content">
+			<img className="profil_image" src={profil.image} alt={profil.nom} />
+			<h2 className="name">{profil.nom}</h2>
+			<div className="text">
+				<p>
+					<u>Age</u> : {profil.age} ans
+				</p>
+				<p>
+					<u>Description</u> : {profil.description}
+				</p>
+				<p>
+					<u>Recherche</u> : {profil.relation}
+				</p>
+			</div>
+		</section>
 	);
 }
