@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	list-style: none;
 }
 
 #root {
@@ -12,4 +15,23 @@
 	--first-font-family: "Olympus";
 	--second-font-family: "Londrina Solid";
 	--third-font-family: "Verdana" sans-serif;
+}
+
+body {
+	background-color: white;
+	color: #000;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--first-font-family);
+}
+
+p {
+	font-family: var(--second-font-family);
+	letter-spacing: 0.0 .5rem;
 }
