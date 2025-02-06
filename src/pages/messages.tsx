@@ -40,14 +40,16 @@ function Messages() {
 			</div>
 			<div className="block_message">
 				{messages.map((message) => (
-					<article key={message.sender}>
-						<div className="titleMessage">
-							<img src={message.image} alt="" />
-							<h3> {message.sender}</h3>
-						</div>
-						<p>{message.timestamp}</p>
-						<p>{message.message}</p>
-					</article>
+					<Link key={message.id} to={`/messages/${message.id}`}>
+						<article key={message.sender}>
+							<div className="titleMessage">
+								<img src={message.image} alt="" />
+								<h3> {message.sender}</h3>
+							</div>
+							<p>{message.timestamp}</p>
+							<p>{message.message}</p>
+						</article>
+					</Link>
 				))}
 			</div>
 		</section>
