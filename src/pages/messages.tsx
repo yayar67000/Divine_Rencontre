@@ -42,12 +42,13 @@ function Messages() {
 				{messages.map((message) => (
 					<Link key={message.id} to={`/messages/${message.id}`}>
 						<article key={message.sender}>
-							<div className="titleMessage">
-								<img src={message.image} alt="" />
+							<img src={message.image} alt="" />
+							<div className="dateMessage">
 								<h3> {message.sender}</h3>
+
+								<p>{message.timestamp}</p>
+								<p>{message.message}</p>
 							</div>
-							<p>{message.timestamp}</p>
-							<p>{message.message}</p>
 						</article>
 					</Link>
 				))}
