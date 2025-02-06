@@ -1,18 +1,20 @@
 .content_profils {
-	background-color: var(--second-color);
-	align-items: center;
-}
-.content_profils > ul {
 	display: flex;
 	flex-direction: row;
+	background-color: var(--second-color);
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	overflow-x: auto;
+	max-width: 375px;
 }
 
-.content_profils > ul > li {
-	list-style-type: none;
-}
-
-.content_profils > ul > li > a {
-	text-decoration: none;
+.image_content {
+	width: 5rem;
+	height: 5rem;
+	object-fit: cover;
+	border-radius: 50%;
 }
 
 .block_message article {
