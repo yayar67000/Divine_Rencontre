@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
 
-import Profil from "./pages/Profil.tsx";
+import Profil from "./pages/profil/Profil.tsx";
 import Home from "./pages/Home.tsx";
 import Messages from "./pages/messages.tsx";
 import ProfilDetails from "./pages/Profil_Details/ProfilDetails.tsx";
