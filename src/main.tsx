@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
 import Messages from "./pages/messages.tsx";
+import Profil from "./pages/profil/Profil.tsx";
 
 // Router creation
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
 			{
 				path: "/messages",
 				element: <Messages />,
+			},
+			{
+				path: "/profil",
+				element: <Profil />,
 			},
 		],
 	},
