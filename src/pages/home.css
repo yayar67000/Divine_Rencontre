@@ -1,4 +1,44 @@
-.title {
+.container-accueil {
+    border: solid #d06a2b;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.075);
+    margin: 1rem 1rem;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.card-accueil {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 100%;
+}
+
+.description-accueil {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.name-accueil {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+
+.container-boutons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.button-left {
+    background-color:#ffd700 ;
+}
+
+.button-right {
+    background-color: #d06a2b;
 }
