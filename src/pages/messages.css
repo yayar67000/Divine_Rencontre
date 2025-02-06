@@ -19,6 +19,7 @@
 	object-fit: cover;
 	border-radius: 50%;
 	box-shadow: 1px 3px 8px 1px #fff;
+	object-position: top;
 }
 .content_messages {
 	display: flex;
@@ -40,10 +41,6 @@
 	gap: 2rem;
 	& img {
 		width: 20vw;
-		height: 20vw;
-		border-radius: 8px;
-		object-fit: cover;
-		object-position: top;
 	}
 	& h3 {
 		font-size: 2rem;
