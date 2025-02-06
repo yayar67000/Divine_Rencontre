@@ -24,7 +24,7 @@ function Messages() {
 	const messages = DataMessages as MessagesType[];
 	const profils = DataProfils as ProfilType[];
 	return (
-		<>
+		<section className="content_messages">
 			<div className="content_profils">
 				{profils.map((profil) => (
 					<img
@@ -36,18 +36,18 @@ function Messages() {
 				))}
 			</div>
 			<div className="block_message">
-				<img src="" alt="" />
-
 				{messages.map((message) => (
 					<article key={message.sender}>
-						<img src={message.image} alt="" />
-						<h3> {message.sender}</h3>
+						<div className="titleMessage">
+							<img src={message.image} alt="" />
+							<h3> {message.sender}</h3>
+						</div>
 						<p>{message.timestamp}</p>
 						<p>{message.message}</p>
 					</article>
 				))}
 			</div>
-		</>
+		</section>
 	);
 }
 
