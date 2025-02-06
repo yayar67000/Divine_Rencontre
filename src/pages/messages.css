@@ -40,7 +40,10 @@
 	align-items: center;
 	gap: 2rem;
 	& img {
-		width: 20vw;
+		min-width: 20vw;
+		height: 20vw;
+		object-fit: cover;
+		object-position: top;
 	}
 	& h3 {
 		font-size: 2rem;
