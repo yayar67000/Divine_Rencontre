@@ -4,6 +4,8 @@
 	padding: 1rem;
 	align-items: center;
 	position: fixed;
+	left: 0;
+	width: 100%;
 	background: #fff;
 	top: 0%;
 }
@@ -24,4 +26,5 @@ nav img {
 	font-size: 2rem;
 	font-family: var(--first-font-family);
 	justify-content: flex-end;
+	position: sticky;
 }
