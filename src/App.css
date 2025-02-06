@@ -35,3 +35,8 @@ p {
 	font-family: var(--second-font-family);
 	letter-spacing: 0.0 .5rem;
 }
+
+a {
+	text-decoration: none; /* Supprime le soulignement */
+	color: inherit;
+}
