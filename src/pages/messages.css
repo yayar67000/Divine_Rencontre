@@ -1,0 +1,27 @@
+.content_profils {
+	background-color: var(--second-color);
+	align-items: center;
+}
+.content_profils > ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.content_profils > ul > li {
+	list-style-type: none;
+}
+
+.content_profils > ul > li > a {
+	text-decoration: none;
+}
+
+.block_message article {
+	border-radius: 8px;
+	padding: 1rem;
+	margin: 1rem;
+	border: 2px solid var(--primary-color);
+
+	& h3 {
+		font-size: 2rem;
+	}
+}
