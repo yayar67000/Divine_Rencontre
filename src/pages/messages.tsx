@@ -1,7 +1,20 @@
+import "./messages.css";
+import { Link } from "react-router-dom";
+
 function Messages() {
 	return (
 		<>
-			<h2>messages</h2>
+			<div className="content_profils">
+				<ul>
+					<li>""</li>
+					<li>""</li>
+					<li>""</li>
+				</ul>
+			</div>
+			<div className="block_message">
+				<img src="" alt="" />
+				<p>""</p>
+			</div>
 		</>
 	);
 }
