@@ -1,6 +1,4 @@
-import "./App.css";
-
-function App() {
+function Messages() {
 	return (
 		<>
 			<h2>messages</h2>
@@ -8,4 +6,4 @@ function App() {
 	);
 }
 
-export default App;
+export default Messages;
