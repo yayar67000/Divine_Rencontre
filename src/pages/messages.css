@@ -7,7 +7,7 @@
 	margin-bottom: 2rem;
 	margin-top: 2rem;
 	overflow-x: auto;
-	width: 95vw;
+	width: 100vw;
 	padding: 1rem;
 	border-radius: 8px;
 	/* max-width: 375px; */
@@ -22,7 +22,11 @@
 	box-shadow: 1px 3px 8px 1px #fff;
 }
 .content_messages {
-	width: 95vw;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 100vw;
+
 	/* background-color: red; */
 }
 
