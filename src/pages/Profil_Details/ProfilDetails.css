@@ -14,6 +14,7 @@
 	object-fit: cover;
 	border-radius: 8px;
 	margin-top: 1rem;
+	object-position: top;
 }
 
 .name {
