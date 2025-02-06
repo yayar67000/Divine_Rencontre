@@ -5,10 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
 
-import Profil from "./Pages/Profil.tsx";
-import Home from "./Pages/Home.tsx";
-import Messages from "./Pages/messages.tsx";
-
+import Profil from "./pages/profil/Profil.tsx";
+import Home from "./pages/Home.tsx";
+import Messages from "./pages/messages.tsx";
 
 const router = createBrowserRouter([
 	{

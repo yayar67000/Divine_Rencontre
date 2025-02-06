@@ -19,7 +19,7 @@
 
 body {
 	background-color: white;
-	color: #000;
+	color: black;
 	/* width: 100%; */
 	display: flex;
 	flex-direction: column;
