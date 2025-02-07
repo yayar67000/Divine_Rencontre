@@ -19,6 +19,7 @@
 
 .name {
 	margin-top: 1rem;
+	color: var(--font-color);
 }
 
 .text {
