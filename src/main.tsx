@@ -6,10 +6,12 @@ import "./index.css";
 import App from "./App.tsx";
 
 import Profil from "./pages/profil/Profil.tsx";
-import Home from "./pages/Home.tsx";
-import Messages from "./pages/messages.tsx";
+import Home from "./pages/home/Home.tsx";
+import Messages from "./pages/messages/messages.tsx";
 import MessagesOpen from "./pages/messageOpen/MessageOpen.tsx";
 import ProfilDetails from "./pages/Profil_Details/ProfilDetails.tsx";
+
+// import { match } from "./services/match.ts";
 
 const router = createBrowserRouter([
 	{
