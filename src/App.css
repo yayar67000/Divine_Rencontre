@@ -40,3 +40,7 @@ a {
 	text-decoration: none; /* Supprime le soulignement */
 	color: inherit;
 }
+
+main {
+	min-height: 95vh;
+}
