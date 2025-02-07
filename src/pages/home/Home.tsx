@@ -48,11 +48,6 @@ export default function Home() {
 					<img src="./pomme.svg" alt="pomme" />
 				</button>
 			</div>
-			<Link to="/messages">
-				<button type="button" className="view-matches-button">
-					Voir les matchs ❤️
-				</button>
-			</Link>
 		</>
 	);
 }
