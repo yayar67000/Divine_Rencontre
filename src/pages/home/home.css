@@ -49,3 +49,34 @@
 .button-right {
 	background-color: #d06a2b;
 }
+
+.no-more-gods {
+	width: 80vw;
+	padding-top: 6.5rem;
+	margin: 0 auto;
+	text-align: center;
+	object-fit: contain;
+}
+
+.noGod-content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	& a {
+		color: var(--font-color);
+		background-color: var(--second-color);
+		width: 50vw;
+		text-align: center;
+		margin: 0 auto;
+		border-radius: 8px;
+		padding: 0.4rem 0.8rem;
+	}
+}
+
+.cupidon {
+	max-height: 100vw;
+	border-radius: 8px;
+	margin: 2rem;
+	object-fit: cover;
+	object-position: top;
+}
