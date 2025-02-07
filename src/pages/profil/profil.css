@@ -3,6 +3,7 @@
 	width: 70vw;
 	padding: 2rem 0;
 	margin: 0 auto;
+	color: var(--font-color);
 }
 
 .content-profil form {
@@ -24,16 +25,19 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 1rem;
+		color: var(--font-color);
 	}
 
 	& .name-age input {
 		width: 48%;
+		color: var(--font-color);
 	}
 
 	& .description-input {
 		width: 100%;
 		height: 20vh;
 		margin-bottom: 1rem;
+		color: var(--font-color);
 	}
 
 	& form {
@@ -43,5 +47,6 @@
 	& .button-save {
 		margin: 0 auto;
 		width: 30vw;
+		color: var(--font-color);
 	}
 }
