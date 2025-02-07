@@ -19,6 +19,7 @@
 	object-fit: cover;
 	border-radius: 50%;
 	box-shadow: 1px 3px 8px 1px #fff;
+	object-position: top;
 }
 .content_messages {
 	display: flex;
@@ -35,9 +36,14 @@
 	padding: 1rem;
 	margin: 1rem 0;
 	border: 2px solid var(--primary-color);
-
+	display: flex;
+	align-items: center;
+	gap: 2rem;
 	& img {
-		width: 20vw;
+		min-width: 20vw;
+		height: 20vw;
+		object-fit: cover;
+		object-position: top;
 	}
 	& h3 {
 		font-size: 2rem;
