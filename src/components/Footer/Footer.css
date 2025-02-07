@@ -1,4 +1,5 @@
 .footer {
-    font-size: 1.6rem;
-    text-align: center;
+	font-size: 1.6rem;
+	text-align: center;
+	color: var(--font-color);
 }

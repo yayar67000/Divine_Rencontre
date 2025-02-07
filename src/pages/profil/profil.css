@@ -50,3 +50,7 @@
 		color: var(--font-color);
 	}
 }
+
+input::placeholder {
+	color: var(--font-color);
+}
