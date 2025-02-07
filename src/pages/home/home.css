@@ -11,9 +11,15 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	padding: 2rem;
-	max-width: 100%;
 	color: var(--font-color);
+}
+
+.card-accueil > img {
+	width: 18rem;
+	height: 18rem;
+	object-fit: cover;
 }
 
 .description-accueil {
