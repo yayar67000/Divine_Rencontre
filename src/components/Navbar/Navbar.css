@@ -8,12 +8,21 @@
 	width: 100%;
 	background: var(--background-color);
 	top: 0%;
+
+	& a {
+		text-decoration: none; /* Supprime le soulignement */
+		color: inherit;
+	}
 }
 
 nav {
 	display: flex;
 	justify-content: space-around;
 	gap: 0.5rem;
+
+	& p {
+		color: var(--font-color);
+	}
 }
 nav > a > img {
 	display: flex;

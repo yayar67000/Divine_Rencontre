@@ -2,6 +2,7 @@ import "./ProfilDetails.css";
 import DataProfils from "../../services/DataProfils";
 import { useParams } from "react-router-dom";
 import { useMatchedGods } from "../../context/MatchContext";
+import { useNumberMessageContext } from "../../context/NumberMessageContext";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -18,8 +19,8 @@ export default function ProfilDetails() {
 	const profils = DataProfils as ProfilType[];
 	const [dematch, setDematch] = useState(false);
 
-	const { matchedGods, setMatchedGods } = useMatchedGods(); // Utilisation du contexte
-
+	const { setMatchedGods } = useMatchedGods(); // Utilisation du contexte
+	const { setNumberMessage } = useNumberMessageContext();
 	const { id } = useParams();
 	const profil = profils.find((projet) => projet.id === Number(id));
 	if (!profil) {
@@ -29,6 +30,7 @@ export default function ProfilDetails() {
 	const handleClickDematch = () => {
 		setDematch(true);
 		alert(`Tu viens de supprimer ${profil.nom} de tes matchs !`);
+		setNumberMessage((prevNumberMessage) => prevNumberMessage - 1);
 		setMatchedGods((prevMatches) =>
 			prevMatches.filter((god) => god.id !== profil.id),
 		);

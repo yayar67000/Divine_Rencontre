@@ -1,25 +1,28 @@
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useNumberMessageContext } from "../../context/NumberMessageContext";
 import Switch from "../Switch/Switch";
 
 export default function Navbar() {
+	const { numberMessage } = useNumberMessageContext();
+
 	return (
 		<>
 			<div className="container">
-				<NavLink to="/">
+				<Link to="/">
 					<h1 className="title">Divine rencontre</h1>
-				</NavLink>
+				</Link>
 				<nav>
-					{/* css a faire  */}
-					<NavLink to="/profil" className="nav-link-lat">
+					<Link to="/profil" className="nav-link-lat">
 						<img src="/vieil-homme.png" alt="" />
-					</NavLink>
-					<NavLink to="/home" className="nav-link-lat">
+					</Link>
+					<Link to="/home" className="nav-link-lat">
 						<img src="eclat.png" alt="" />
-					</NavLink>
-					<NavLink to="/messages" className="nav-link-lat">
+					</Link>
+					<Link to="/messages" className="nav-link-lat">
 						<img src="epitre.png" alt="" />
-					</NavLink>
+						<p>{numberMessage}</p>
+					</Link>
 
 					<div className="switch">
 						<Switch />

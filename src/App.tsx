@@ -6,6 +6,8 @@ import Footer from "./components/Footer/Footer";
 import { MatchContextProvider } from "./context/MatchContext";
 import { useDarkTheme } from "./context/DarkMode";
 
+import { NumberMessageContextProvider } from "./context/NumberMessageContext";
+
 function App() {
 	const { darkMode } = useDarkTheme();
 
@@ -16,14 +18,16 @@ function App() {
 	}
 	return (
 		<>
-			<MatchContextProvider>
-				<Navbar />
-				<main>
-					{" "}
-					<Outlet />
-				</main>
-				<Footer />
-			</MatchContextProvider>
+			<NumberMessageContextProvider>
+				<MatchContextProvider>
+					<Navbar />
+					<main>
+						{" "}
+						<Outlet />
+					</main>
+					<Footer />
+				</MatchContextProvider>
+			</NumberMessageContextProvider>
 		</>
 	);
 }
