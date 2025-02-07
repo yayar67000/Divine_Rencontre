@@ -52,6 +52,7 @@
 	-o-transition: var(--transition);
 	transition: var(--transition);
 	position: relative;
+	margin-top: 0.5rem;
 }
 
 .theme-switch__container::before {
