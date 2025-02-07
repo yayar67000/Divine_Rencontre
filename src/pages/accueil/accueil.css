@@ -1,0 +1,25 @@
+.welcome {
+	display: flex;
+	font-size: 2.5rem;
+	text-align: center;
+	padding: 1rem;
+	background-color: rgba(0, 0, 0, 0.075);
+	border: solid #d06a2b;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+}
+.img-accueil {
+	display: flex;
+	min-width: 100%;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.Message-accueil {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.075);
+	border: solid #d06a2b;
+	border-radius: 0.5rem;
+	padding: 2rem;
+	word-spacing: 0.5rem;
+}
