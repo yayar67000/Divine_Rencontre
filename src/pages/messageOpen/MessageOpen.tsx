@@ -3,6 +3,7 @@ import DataMessages from "../../services/DataMessage";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
+import { Flip, ToastContainer, toast } from "react-toastify";
 
 interface MessageType {
 	id: number;
@@ -80,12 +81,35 @@ export default function MessagesOpen() {
 			// Réinitialiser le champ de texte après l'envoi
 			setResponse("");
 		} else {
-			alert("Veuillez écrire une réponse.");
+			toast.warn("Veuillez écrire une réponse.", {
+				position: "top-center",
+				autoClose: 2000,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: "dark",
+				transition: Flip,
+			});
 		}
 	};
 
 	return (
 		<section className="messageOpen">
+			<ToastContainer
+				position="top-center"
+				autoClose={1000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+				theme="dark"
+				transition={Flip}
+			/>
 			<h2>Message de {message.sender} </h2>
 			<div className="message-dieu">
 				<Link to={`/profildetails/${message.id}`}>
