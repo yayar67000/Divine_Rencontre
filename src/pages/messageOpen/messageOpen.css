@@ -23,3 +23,25 @@
 		object-position: top;
 	}
 }
+
+.reponses {
+	border: 1px solid red;
+	border-radius: 0.5rem;
+	margin-top: 1rem;
+}
+
+.responseMessage {
+	background-color: lightblue;
+	margin: 5px;
+	padding: 10px;
+}
+
+.replySection input {
+	padding: 0.4rem 0.8rem;
+	margin-top: 1rem;
+}
+
+.replySection button {
+	background-color: var(--primary-color);
+	margin-left: 1rem;
+}
