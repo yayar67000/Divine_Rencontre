@@ -41,6 +41,7 @@
 	gap: 2rem;
 	color: var(--font-color);
 	& img {
+		border-radius: 8px;
 		min-width: 20vw;
 		height: 20vw;
 		object-fit: cover;
