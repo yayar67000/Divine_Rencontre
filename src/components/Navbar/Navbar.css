@@ -8,6 +8,11 @@
 	width: 100%;
 	background: #fff;
 	top: 0%;
+
+	& a {
+		text-decoration: none; /* Supprime le soulignement */
+		color: inherit;
+	}
 }
 
 nav {

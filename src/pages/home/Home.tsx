@@ -1,6 +1,6 @@
 import DataProfils from "../../services/DataProfils";
-import { Link } from "react-router-dom";
 import { useMatchedGods } from "../../context/MatchContext";
+import { useNumberMessageContext } from "../../context/NumberMessageContext";
 
 import "./home.css";
 import { useState } from "react";
@@ -8,9 +8,11 @@ import { useState } from "react";
 export default function Home() {
 	const gods = DataProfils;
 	const [currentCard, setCurrentCard] = useState(0);
-	const { matchedGods, setMatchedGods } = useMatchedGods(); // Utilisation du contexte
+	const { setMatchedGods } = useMatchedGods();
+	const { numberMessage, setNumberMessage } = useNumberMessageContext();
 
 	const handleClickMatch = () => {
+		setNumberMessage((prevNumberMessage) => prevNumberMessage + 1);
 		setCurrentCard((prevCard) => (prevCard + 1) % gods.length);
 		setMatchedGods((prevMatches) => [...prevMatches, gods[currentCard]]);
 	};
@@ -18,7 +20,7 @@ export default function Home() {
 		setCurrentCard((prevCard) => (prevCard + 1) % gods.length);
 	};
 
-	console.info(matchedGods);
+	console.info(numberMessage);
 
 	return (
 		<>

@@ -12,7 +12,6 @@ interface ProfilType {
 interface MatchContextProps {
 	matchedGods: ProfilType[];
 	setMatchedGods: React.Dispatch<React.SetStateAction<ProfilType[]>>;
-	addMatch: (god: ProfilType) => void;
 }
 
 const MatchContext = createContext<MatchContextProps | null>(null);
@@ -20,12 +19,8 @@ const MatchContext = createContext<MatchContextProps | null>(null);
 export function MatchContextProvider({ children }: { children: ReactNode }) {
 	const [matchedGods, setMatchedGods] = useState([] as ProfilType[]);
 
-	const addMatch = (god: ProfilType) => {
-		setMatchedGods((prevMatches) => [...prevMatches, god]);
-	};
-
 	return (
-		<MatchContext.Provider value={{ matchedGods, setMatchedGods, addMatch }}>
+		<MatchContext.Provider value={{ matchedGods, setMatchedGods }}>
 			{children}
 		</MatchContext.Provider>
 	);
