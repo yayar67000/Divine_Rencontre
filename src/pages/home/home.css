@@ -1,44 +1,82 @@
 .container-accueil {
-    border: solid #d06a2b;
-    border-radius: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.075);
-    margin: 1rem 1rem;
-    max-width: 90vw;
-    max-height: 90vh;
+	border: solid #d06a2b;
+	border-radius: 0.5rem;
+	background-color: rgba(0, 0, 0, 0.075);
+	margin: 1rem 1rem;
+	max-width: 90vw;
+	max-height: 90vh;
 }
 
 .card-accueil {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
-    max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	color: var(--font-color);
+}
+
+.card-accueil > img {
+	width: 18rem;
+	height: 18rem;
+	object-fit: cover;
 }
 
 .description-accueil {
-    display: flex;
-    justify-content: center;
-    padding-top: 1.5rem;
-    font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	padding-top: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .name-accueil {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    font-size: 3rem;
+	display: flex;
+	justify-content: center;
+	padding-top: 2rem;
+	font-size: 3rem;
 }
 
 .container-boutons {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1rem;
 }
 
 .button-left {
-    background-color:#ffd700 ;
+	background-color: #ffd700;
 }
 
 .button-right {
-    background-color: #d06a2b;
+	background-color: #d06a2b;
+}
+
+.no-more-gods {
+	width: 80vw;
+	padding-top: 6.5rem;
+	margin: 0 auto;
+	text-align: center;
+	object-fit: contain;
+}
+
+.noGod-content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	& a {
+		color: var(--font-color);
+		background-color: var(--second-color);
+		width: 50vw;
+		text-align: center;
+		margin: 0 auto;
+		border-radius: 8px;
+		padding: 0.4rem 0.8rem;
+	}
+}
+
+.cupidon {
+	max-height: 100vw;
+	border-radius: 8px;
+	margin: 2rem;
+	object-fit: cover;
+	object-position: top;
 }

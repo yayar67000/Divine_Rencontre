@@ -1,16 +1,15 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import { DarkModeProvider } from "./context/DarkMode.tsx";
 import "./index.css";
-import Accueil from "./Pages/accueil/Accueil.tsx";
+import Accueil from "./pages/accueil/Accueil.tsx";
 import App from "./App.tsx";
 
-import Profil from "./Pages/profil/Profil.tsx";
-import Home from "./Pages/home/Home.tsx";
-import Messages from "./Pages/messages/messages.tsx";
-import MessagesOpen from "./Pages/messageOpen/MessageOpen.tsx";
-import ProfilDetails from "./Pages/Profil_Details/ProfilDetails.tsx";
+import Profil from "./pages/profil/Profil.tsx";
+import Home from "./pages/home/Home.tsx";
+import Messages from "./pages/messages/messages.tsx";
+import MessagesOpen from "./pages/messageOpen/MessageOpen.tsx";
+import ProfilDetails from "./pages/Profil_Details/ProfilDetails.tsx";
 
 // import { match } from "./services/match.ts";
 
@@ -51,7 +50,7 @@ if (rootElement == null) {
 	throw new Error(`Your HTML Document should contain a <div id="root"></div>`);
 }
 createRoot(rootElement).render(
-	<StrictMode>
+	<DarkModeProvider>
 		<RouterProvider router={router} />
-	</StrictMode>,
+	</DarkModeProvider>,
 );

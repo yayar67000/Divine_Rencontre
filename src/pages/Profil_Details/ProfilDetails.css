@@ -19,6 +19,7 @@
 
 .name {
 	margin-top: 1rem;
+	color: var(--font-color);
 }
 
 .text {
@@ -30,6 +31,7 @@
 
 .text > p {
 	margin-bottom: 1rem;
+	color: var(--font-color);
 }
 
 .button-dematch {
@@ -38,14 +40,18 @@
 
 .button-profilDetails {
 	padding: 1rem;
+	display: flex;
 	text-align: center;
+	justify-content: center;
 
 	& button {
 		margin-right: 1rem;
+		background-color: var(--second-color);
 	}
 	& a {
 		background-color: var(--primary-color);
 		padding: 0.6rem 0.8rem;
 		border-radius: 8px;
+		color: black;
 	}
 }
