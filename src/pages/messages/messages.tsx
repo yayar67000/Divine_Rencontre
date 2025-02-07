@@ -24,7 +24,7 @@ function Messages() {
 	return (
 		<section className="content_messages">
 			{/* Affichage des profils des dieux matchés */}
-			<div className="content_profils">
+			<div className={matchedGods.length < 1 ? "noGods" : "content_profils"}>
 				{matchedGods.map((profil) => (
 					<Link key={profil.id} to={`/profildetails/${profil.id}`}>
 						<img

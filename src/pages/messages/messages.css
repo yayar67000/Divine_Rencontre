@@ -12,6 +12,10 @@
 	/* max-width: 375px; */
 }
 
+.noGods {
+	background-color: var(--background-color);
+}
+
 .image_content {
 	width: 6rem;
 	height: 6rem;
