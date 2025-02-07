@@ -1,7 +1,6 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import { DarkModeProvider } from "./context/DarkMode.tsx";
 import "./index.css";
 import App from "./App.tsx";
 
@@ -46,7 +45,7 @@ if (rootElement == null) {
 	throw new Error(`Your HTML Document should contain a <div id="root"></div>`);
 }
 createRoot(rootElement).render(
-	<StrictMode>
+	<DarkModeProvider>
 		<RouterProvider router={router} />
-	</StrictMode>,
+	</DarkModeProvider>,
 );

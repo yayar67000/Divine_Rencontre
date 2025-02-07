@@ -1,6 +1,7 @@
 .messageOpen h2 {
 	font-size: 2rem;
 	margin: 2rem 0;
+	color: var(--font-color);
 }
 
 .messageOpen {
@@ -12,6 +13,7 @@
 	border: 2px solid var(--primary-color);
 	border-radius: 8px;
 	padding: 1rem;
+	color: var(--font-color);
 	& img {
 		height: 4rem;
 		width: 4rem;
