@@ -63,8 +63,33 @@ export default function MessagesOpen() {
 		setResponse(e.target.value);
 	};
 
-	// Fonction pour envoyer la réponse et l'ajouter aux réponses
 	const handleSendResponse = () => {
+		if (response.trim()) {
+			// Créer un objet de message de réponse pour la première réponse
+			const newResponse1: MessageType = {
+				id: Date.now(), // Utilisation de l'horodatage pour générer un ID unique
+				sender: "Moi", // Exemple : l'utilisateur qui répond
+				message: response, // Réponse de l'utilisateur
+				image: "", // Ajoutez une image si nécessaire
+			};
+
+			// Créer un objet de message de réponse pour la deuxième réponse
+			const newResponse2: MessageType = {
+				id: Date.now() + 1, // ID unique pour la deuxième réponse
+				sender: `${message.sender}`, // Réponse de l'assistant
+				message: "c'est bueno !", // Réponse pré-enregistrée
+				image: "", // Ajoutez une image si nécessaire
+			};
+
+			// Ajouter les réponses au tableau des réponses
+			setResponses((prevResponses) => [
+				...prevResponses,
+				newResponse1,
+				newResponse2, // Ajouter la deuxième réponse
+			]);
+
+			// Fonction pour envoyer la réponse et l'ajouter aux réponses
+			/*const handleSendResponse = () => {
 		if (response.trim()) {
 			// Créer un objet de message de réponse
 			const newResponse: MessageType = {
@@ -75,7 +100,7 @@ export default function MessagesOpen() {
 			};
 
 			// Ajouter la réponse au tableau des réponses
-			setResponses([...responses, newResponse]);
+			setResponses([...responses, newResponse]);*/
 
 			// Réinitialiser le champ de texte après l'envoi
 			setResponse("");
