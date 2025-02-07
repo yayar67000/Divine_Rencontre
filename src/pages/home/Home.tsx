@@ -28,9 +28,7 @@ export default function Home() {
 				<div className="card-accueil">
 					<img src={gods[currentCard].image} alt={gods[currentCard].nom} />
 					<h2 className="name-accueil">{gods[currentCard].nom}</h2>
-					<div className="description-accueil">
-						<p>{gods[currentCard].description}</p>
-					</div>
+					<p className="description-accueil">{gods[currentCard].description}</p>
 				</div>
 			</div>
 			<div className="container-boutons">
