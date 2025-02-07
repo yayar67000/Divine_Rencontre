@@ -5,6 +5,7 @@ import { useMatchedGods } from "../../context/MatchContext";
 import { useNumberMessageContext } from "../../context/NumberMessageContext";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Flip, ToastContainer, toast } from "react-toastify";
 
 interface ProfilType {
 	id: number;
@@ -29,15 +30,38 @@ export default function ProfilDetails() {
 
 	const handleClickDematch = () => {
 		setDematch(true);
-		alert(`Tu viens de supprimer ${profil.nom} de tes matchs !`);
+		toast.warn(`Tu viens de supprimer ${profil.nom} de tes matchs !`, {
+			position: "top-center",
+			autoClose: 2000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+			theme: "dark",
+			transition: Flip,
+		});
 		setNumberMessage((prevNumberMessage) => prevNumberMessage - 1);
 		setMatchedGods((prevMatches) =>
 			prevMatches.filter((god) => god.id !== profil.id),
 		);
 	};
-
+	`Tu viens de supprimer ${profil.nom} de tes matchs !`;
 	return (
 		<>
+			<ToastContainer
+				position="top-center"
+				autoClose={1000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+				theme="dark"
+				transition={Flip}
+			/>
 			<section className="detailprofil_content">
 				<img className="profil_image" src={profil.image} alt={profil.nom} />
 				<h2 className="name">{profil.nom}</h2>
