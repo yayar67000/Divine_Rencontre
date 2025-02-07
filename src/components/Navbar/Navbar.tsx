@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import Switch from "../Switch/Switch";
 
 export default function Navbar() {
 	return (
@@ -19,6 +20,10 @@ export default function Navbar() {
 					<NavLink to="/messages" className="nav-link-lat">
 						<img src="epitre.png" alt="" />
 					</NavLink>
+
+					<div className="switch">
+						<Switch />
+					</div>
 				</nav>
 			</div>
 		</>
