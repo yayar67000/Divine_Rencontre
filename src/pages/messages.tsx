@@ -16,7 +16,7 @@ interface ProfilType {
 	nom: string;
 	description: string;
 	image: string;
-	age: 3300;
+	age: number;
 	relation: string;
 }
 
