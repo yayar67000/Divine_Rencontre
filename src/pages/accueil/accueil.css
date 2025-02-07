@@ -11,9 +11,10 @@
 }
 .img-accueil {
 	display: flex;
-	min-width: 100%;
+	max-width: 100%;
 	padding: 1rem;
 	margin-bottom: 1.5rem;
+	border-radius: 20px;
 }
 
 .Message-accueil {

@@ -3,7 +3,7 @@ export default function Accueil() {
 	return (
 		<>
 			<h1 className="welcome">Bienvenue sur "Divine rencontre" !</h1>
-			<img className="img-accueil" src="./Olympe.jpg" alt="L'olympe" />
+			<img className="img-accueil" src="./palaisGreek.png" alt="L'olympe" />
 			<p className="Message-accueil">
 				Ici, les dieux et déesses grecs se rencontrent pour tisser des liens
 				célestes. Que vous soyez un Titan cherchant à briser des chaînes ou un
