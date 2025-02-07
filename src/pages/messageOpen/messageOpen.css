@@ -36,9 +36,16 @@
 	padding: 10px;
 }
 
+.replySection {
+	text-align: center;
+}
+
 .replySection input {
 	padding: 0.4rem 0.8rem;
 	margin-top: 1rem;
+	background-color: var(--background-color);
+	border-radius: 8px;
+	color: var(--font-color);
 }
 
 .replySection button {
