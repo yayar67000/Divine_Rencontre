@@ -3,24 +3,31 @@
 	flex-direction: row;
 	background-color: var(--second-color);
 	align-items: center;
-	gap: 0.5rem;
+	gap: 2rem;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
 	overflow-x: auto;
-	width: 95vw;
 	padding: 1rem;
 	border-radius: 8px;
 	/* max-width: 375px; */
 }
 
 .image_content {
-	width: 5rem;
-	height: 5rem;
+	width: 6rem;
+	height: 6rem;
+	min-width: 6rem;
 	object-fit: cover;
 	border-radius: 50%;
+	box-shadow: 1px 3px 8px 1px #fff;
+	object-position: top;
 }
 .content_messages {
-	width: 95vw;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 100vw;
+	padding: 1rem;
+
 	/* background-color: red; */
 }
 
@@ -29,9 +36,14 @@
 	padding: 1rem;
 	margin: 1rem 0;
 	border: 2px solid var(--primary-color);
-
+	display: flex;
+	align-items: center;
+	gap: 2rem;
 	& img {
-		width: 20vw;
+		min-width: 20vw;
+		height: 20vw;
+		object-fit: cover;
+		object-position: top;
 	}
 	& h3 {
 		font-size: 2rem;

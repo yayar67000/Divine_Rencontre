@@ -1,0 +1,33 @@
+.detailprofil_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: start;
+	border: 2px solid var(--primary-color);
+	border-radius: 8px;
+	margin: 0 1rem 0 1rem;
+}
+
+.profil_image {
+	width: 18rem;
+	height: 18rem;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-top: 1rem;
+	object-position: top;
+}
+
+.name {
+	margin-top: 1rem;
+}
+
+.text {
+	margin: 2rem;
+	padding: 2rem;
+	background-color: var(--second-color);
+	border-radius: 8px;
+}
+
+.text > p {
+	margin-bottom: 1rem;
+}

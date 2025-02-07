@@ -5,9 +5,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
 
-import Profil from "./pages/Profil.tsx";
-import Home from "./pages/Home.tsx";
-import Messages from "./pages/messages.tsx";
+import Profil from "./pages/profil/Profil.tsx";
+import Home from "./pages/home/Home.tsx";
+import Messages from "./pages/messages/messages.tsx";
+import MessagesOpen from "./pages/messageOpen/MessageOpen.tsx";
+import ProfilDetails from "./pages/Profil_Details/ProfilDetails.tsx";
+
+// import { match } from "./services/match.ts";
 
 const router = createBrowserRouter([
 	{
@@ -22,8 +26,16 @@ const router = createBrowserRouter([
 				element: <Messages />,
 			},
 			{
+				path: "/messages/:id",
+				element: <MessagesOpen />,
+			},
+			{
 				path: "/profil",
 				element: <Profil />,
+			},
+			{
+				path: "/profildetails/:id",
+				element: <ProfilDetails />,
 			},
 		],
 	},

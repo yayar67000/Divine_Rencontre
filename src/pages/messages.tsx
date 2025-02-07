@@ -16,35 +16,41 @@ interface ProfilType {
 	nom: string;
 	description: string;
 	image: string;
-	age: 3300;
+	age: number;
 	relation: string;
 }
 
 function Messages() {
 	const messages = DataMessages as MessagesType[];
 	const profils = DataProfils as ProfilType[];
+
 	return (
 		<section className="content_messages">
 			<div className="content_profils">
 				{profils.map((profil) => (
-					<img
-						className="image_content"
-						key={profil.id}
-						src={profil.image}
-						alt={profil.nom}
-					/>
+					<Link key={profil.id} to={`/profildetails/${profil.id}`}>
+						<img
+							className="image_content"
+							key={profil.id}
+							src={profil.image}
+							alt={profil.nom}
+						/>
+					</Link>
 				))}
 			</div>
 			<div className="block_message">
 				{messages.map((message) => (
-					<article key={message.sender}>
-						<div className="titleMessage">
+					<Link key={message.id} to={`/messages/${message.id}`}>
+						<article key={message.sender}>
 							<img src={message.image} alt="" />
-							<h3> {message.sender}</h3>
-						</div>
-						<p>{message.timestamp}</p>
-						<p>{message.message}</p>
-					</article>
+							<div className="dateMessage">
+								<h3> {message.sender}</h3>
+
+								<p>{message.timestamp}</p>
+								<p>{message.message}</p>
+							</div>
+						</article>
+					</Link>
 				))}
 			</div>
 		</section>

@@ -2,15 +2,20 @@ import "./App.css";
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import { MatchContextProvider } from "./context/MatchContext";
 
 function App() {
 	return (
-		<main>
-			{" "}
-			<Navbar />
-			<Outlet />
-			<Footer />
-		</main>
+		<>
+			<MatchContextProvider>
+				<Navbar />
+				<main>
+					{" "}
+					<Outlet />
+				</main>
+				<Footer />
+			</MatchContextProvider>
+		</>
 	);
 }
 
