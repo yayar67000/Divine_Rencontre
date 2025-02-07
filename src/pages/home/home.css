@@ -20,6 +20,7 @@
 	width: 18rem;
 	height: 18rem;
 	object-fit: cover;
+	object-position: top;
 }
 
 .description-accueil {
