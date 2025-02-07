@@ -40,6 +40,7 @@
 	align-items: center;
 	gap: 2rem;
 	& img {
+		border-radius: 8px;
 		min-width: 20vw;
 		height: 20vw;
 		object-fit: cover;
