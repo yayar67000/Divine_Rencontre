@@ -1,8 +1,11 @@
 import Switch from "../Switch/Switch";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import { useNumberMessageContext } from "../../context/NumberMessageContext";
 
 export default function Navbar() {
+	const { numberMessage } = useNumberMessageContext();
+
 	return (
 		<>
 			<div className="container">
@@ -19,6 +22,7 @@ export default function Navbar() {
 					</NavLink>
 					<NavLink to="/messages" className="nav-link-lat">
 						<img src="epitre.png" alt="" />
+						<p>{numberMessage}</p>
 					</NavLink>
 					<Switch />
 				</nav>
